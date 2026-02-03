@@ -1,0 +1,48 @@
+.header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+.logsList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.logCard {
+    background: var(--bg-card);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logMain {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.liftName {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--text-primary);
+}
+
+.liftStats {
+    color: var(--text-secondary);
+}
+
+.liftDate {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}

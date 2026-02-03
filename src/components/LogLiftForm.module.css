@@ -1,0 +1,53 @@
+.formContainer {
+    background: var(--bg-card);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--spacing-xl);
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.input,
+.select {
+    padding: 0.625rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.input:focus,
+.select:focus {
+    outline: 2px solid var(--brand-primary);
+    border-color: transparent;
+}
+
+.textArea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: var(--spacing-sm);
+}
