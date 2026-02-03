@@ -1,0 +1,8 @@
+{
+  "/leaderboard/page": "app/leaderboard/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/login/page": "app/login/page.js",
+  "/auth/callback/route": "app/auth/callback/route.js",
+  "/profile/page": "app/profile/page.js",
+  "/page": "app/page.js"
+}
