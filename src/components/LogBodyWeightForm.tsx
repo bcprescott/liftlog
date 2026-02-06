@@ -22,7 +22,7 @@ export default function LogBodyWeightForm({ onLogSuccess }: { onLogSuccess: () =
             return
         }
 
-        const { error } = await supabase.from('body_measurements').insert({
+        const { error } = await (supabase.from('body_measurements') as any).insert({
             user_id: user.id,
             weight: parseFloat(weight),
             unit: 'lbs', // Default for now

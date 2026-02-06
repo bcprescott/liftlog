@@ -88,16 +88,16 @@ export default function LogLiftForm({ onLogSuccess, initialData, onCancel }: Log
                 ...payload,
                 date_logged: initialData.date_logged
             }
-            const { error: updateError } = await supabase
-                .from('logs')
-                .update(updatePayload as any)
+            const { error: updateError } = await (supabase
+                .from('logs') as any)
+                .update(updatePayload)
                 .eq('id', initialData.id)
             error = updateError
         } else {
             // Insert new
-            const { error: insertError } = await supabase
-                .from('logs')
-                .insert(payload as any)
+            const { error: insertError } = await (supabase
+                .from('logs') as any)
+                .insert(payload)
             error = insertError
         }
 
