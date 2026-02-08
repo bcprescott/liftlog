@@ -97,7 +97,10 @@ insert into public.lift_types (name, category) values
 ('Overhead Press', 'Strength'),
 ('Barbell Row', 'Strength'),
 ('Pull Up', 'Strength'),
-('Dumbbell Curl', 'Hypertrophy');
+('Dumbbell Curl', 'Hypertrophy'),
+('Incline Barbell', 'Strength'),
+('Incline Dumbbell', 'Strength'),
+('Flat Dumbbell', 'Strength');
 
 -- Create likes table
 create table public.likes (
