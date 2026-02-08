@@ -61,15 +61,15 @@ export default function Navbar() {
 
             <div className={`${styles.links} ${isMenuOpen ? styles.linksOpen : ''}`}>
                 <ThemeToggle />
-                <Link href="/dashboard" className={`${styles.link} ${pathname === '/dashboard' ? styles.linkActive : ''}`}>
-                    Dashboard
-                </Link>
-                <Link href="/leaderboard" className={`${styles.link} ${pathname === '/leaderboard' ? styles.linkActive : ''}`}>
-                    Leaderboard
-                </Link>
 
                 {user ? (
                     <>
+                        <Link href="/dashboard" className={`${styles.link} ${pathname === '/dashboard' ? styles.linkActive : ''}`}>
+                            Dashboard
+                        </Link>
+                        <Link href="/leaderboard" className={`${styles.link} ${pathname === '/leaderboard' ? styles.linkActive : ''}`}>
+                            Leaderboard
+                        </Link>
                         <Link href="/profile" className={`${styles.link} ${pathname === '/profile' ? styles.linkActive : ''}`}>
                             Profile
                         </Link>
