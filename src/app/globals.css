@@ -81,6 +81,12 @@ button {
   padding: 0 var(--spacing-md);
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
