@@ -1,1 +1,10 @@
-{"/_not-found":"/_not-found","/dashboard/page":"/dashboard","/login/page":"/login","/profile/page":"/profile","/leaderboard/page":"/leaderboard","/auth/callback/route":"/auth/callback","/page":"/"}
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/auth/callback/route": "/auth/callback",
+  "/dashboard/page": "/dashboard",
+  "/leaderboard/page": "/leaderboard",
+  "/login/page": "/login",
+  "/page": "/",
+  "/profile/page": "/profile"
+}

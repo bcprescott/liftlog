@@ -1,0 +1,3 @@
+module.exports=[22685,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(49353);a.n(d("[project]/Documents/liftlog/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},30598,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(49353);a.n(d("[project]/Documents/liftlog/node_modules/next/dist/client/components/builtin/global-error.js"))},72101,a=>{"use strict";a.i(22685);var b=a.i(30598);a.n(b)}];
+
+//# sourceMappingURL=1c4cd_next_dist_client_components_builtin_global-error_fc414d1d.js.map
