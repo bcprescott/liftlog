@@ -1,5 +1,9 @@
 {
-  "/leaderboard/page": "app/leaderboard/page.js",
+  "/_not-found": "app/_not-found.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/login/page": "app/login/page.js",
   "/profile/page": "app/profile/page.js",
-  "/dashboard/page": "app/dashboard/page.js"
+  "/leaderboard/page": "app/leaderboard/page.js",
+  "/auth/callback/route": "app/auth/callback/route.js",
+  "/page": "app/page.js"
 }

@@ -1,5 +1,7 @@
 # LiftLog 🏋️‍♂️
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
 LiftLog is a social weightlifting tracker that allows users to log their lifts, track progress over time, and compete on a community leaderboard. Built with modern web technologies, it features real-time updates, interactive charts, and a sleek, responsive design.
 
 ## 🚀 Features
@@ -78,6 +80,34 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 🚀 Deployment
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+### 1. Push to GitHub
+
+Make sure your project is pushed to a GitHub repository.
+
+### 2. Import to Vercel
+
+1.  Go to [Vercel.com](https://vercel.com) and sign up/log in.
+2.  Click **Add New...** > **Project**.
+3.  Select your GitHub repository (`liftlog`).
+4.  Click **Import**.
+
+### 3. Configure Environment Variables
+
+In the "Configure Project" step:
+
+1.  Expand the **Environment Variables** section.
+2.  Add the same variables from your `.env.local` file:
+    -   `NEXT_PUBLIC_SUPABASE_URL`
+    -   `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+### 4. Deploy
+
+Click **Deploy**. Vercel will build your application and provide you with a live URL (e.g., `https://liftlog-yourname.vercel.app`).
 
 ## 🤝 Contributing
 

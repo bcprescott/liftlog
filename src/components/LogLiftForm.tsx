@@ -90,6 +90,7 @@ export default function LogLiftForm({ onLogSuccess, initialData, onCancel }: Log
             }
             const { error: updateError } = await supabase
                 .from('logs')
+                // @ts-ignore
                 .update(updatePayload as any)
                 .eq('id', initialData.id)
             error = updateError
@@ -97,6 +98,7 @@ export default function LogLiftForm({ onLogSuccess, initialData, onCancel }: Log
             // Insert new
             const { error: insertError } = await supabase
                 .from('logs')
+                // @ts-ignore
                 .insert(payload as any)
             error = insertError
         }

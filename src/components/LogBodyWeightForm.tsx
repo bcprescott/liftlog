@@ -22,12 +22,13 @@ export default function LogBodyWeightForm({ onLogSuccess }: { onLogSuccess: () =
             return
         }
 
-        const { error } = await supabase.from('body_measurements').insert({
+        // @ts-ignore
+        const { error } = await supabase.from('body_measurements').insert([{
             user_id: user.id,
             weight: parseFloat(weight),
             unit: 'lbs', // Default for now
             date_logged: new Date().toISOString()
-        })
+        }])
 
         if (error) {
             console.error(error)

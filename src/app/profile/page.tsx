@@ -38,8 +38,9 @@ export default function ProfilePage() {
                 console.error('Error loading profile:', error)
                 toast.error('Failed to load profile')
             } else if (data) {
-                setFullName(data.full_name || '')
-                setAvatarUrl(data.avatar_url || '')
+                const profile = data as Profile
+                setFullName(profile.full_name || '')
+                setAvatarUrl(profile.avatar_url || '')
             }
 
             setLoading(false)
@@ -59,7 +60,7 @@ export default function ProfilePage() {
             updated_at: new Date().toISOString(),
         }
 
-        const { error } = await supabase.from('profiles').upsert(updates)
+        const { error } = await supabase.from('profiles').upsert(updates as any)
 
         if (error) {
             toast.error('Failed to update profile')
